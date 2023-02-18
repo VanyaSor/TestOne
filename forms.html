@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+        
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+<a href="./index.html" class="button">Main page</a>
+<br>
+<a href="#image1"><img src="videos-images/fotor_2023-2-12_17_0_45.jpg" height="100" width="150px"></a>
+<a href="#" id="image1" class="pressbox"><img src="videos-images/fotor_2023-2-12_17_0_45.jpg"height="400" width="600px"></a>
+<a href="https://www.city.kharkov.ua/ru/gorodskaya-vlast/ispolnitelnyie-organyi/rajonnyie-administraczii/ndustralnij-rajon/o-rajone.html" target="_blank"><img src="videos-images/logo.png" height="50px" width="60px" class="logo"></a>
+    <form>
+        <div class="container">
+            
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+    
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+            <hr>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" pattern="[0-9A-Za-z]{3,27}"required>
+            <hr>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" pattern="[0-9A-Za-z]{3,27}"required>
+            <hr>
+            <p>By creating an account you agree to our <a href="https://support.microsoft.com/ru-ru/windows/защита-своей-конфиденциальности-в-интернете-ffe36513-e208-7532-6f95-a3b1c8760dfa" target="_blank">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </form>
+</body>
+</html>

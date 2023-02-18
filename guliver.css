@@ -1,0 +1,199 @@
+html,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+background-image: linear-gradient(to left, #AEC09A, #cedf90);
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            text-align: start;
+        }
+    }
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: #778D45;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+p {
+    padding-left: 40pt;
+    font-size: 20px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Play', sans-serif;
+
+}
+
+ul {
+    font-size: 120%;
+}
+
+.parks {
+    color: #fff;
+}
+
+.page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#first {
+    background-color: tan;
+    height: 100vh;
+    padding: 20px;
+}
+
+input#toggle {
+    display: none;
+}
+
+label#second {
+    display: block;
+    background-color: #AEC670;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: -350px;
+    width: 400px;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+input#toggle:checked+label[for="toggle"] {
+    background-color: #344C11;
+    left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+
+    padding-left: 40pt;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider>a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: burlywood;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slider>a:active {
+    top: 1px;
+    color: #1c87c9;
+}
+
+.slider>a:focus {
+    background: #eee;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #344C11;
+    color: #fff;
+
+    font-family: 'Aboreto', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.map {
+    padding-left: 40pt;
+}
